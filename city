@@ -1,0 +1,75 @@
+from turtle import *
+
+pensize(3)
+color('black', 'grey')
+def draw_home():
+    begin_fill()
+    for i in range(2):
+        forward(200)
+        left(90)
+        forward(300)
+        left(90)
+    end_fill()
+    
+def draw_windows():
+    color('orange', 'yellow')
+    begin_fill()
+    for i in range(2):
+        forward(30)
+        left(90)
+        forward(60)
+        left(90)
+    end_fill()
+
+def draw_windows_x_y():
+        penup()
+        goto(25, 25)
+        pendown()
+        draw_windows()
+
+        penup()
+        goto(140, 25)
+        pendown()
+        draw_windows()
+
+        penup()
+        goto(25, 200)
+        pendown()
+        draw_windows()
+
+        penup()
+        goto(140, 200)
+        pendown()
+        draw_windows()
+
+
+
+
+def tree():
+    color('green')
+    begin_fill()
+    circle(70)
+    end_fill()
+    
+    penup()
+    goto(-110,-40)  
+    pendown()
+    
+    color('brown')
+    begin_fill()
+    for i in range(2):
+        forward(20)
+        right(90)
+        forward(110)
+        right(90)
+    end_fill()
+
+def sun():
+    pensize(2)
+    begin_fill()
+    color('orange')
+    begin_fill()
+    for i in range(18):
+        forward(100)
+        left(100)
+    end_fill()
